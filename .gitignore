@@ -1,0 +1,95 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Node / React / Vite
+# =========================
+node_modules/
+dist/
+.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# Django
+# =========================
+db.sqlite3
+db.sqlite3-journal
+
+media/
+staticfiles/
+
+# =========================
+# Django local settings
+# =========================
+local_settings.py
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Build / temporary files
+# =========================
+*.tmp
+*.temp
+.cache/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# Windows security metadata
+*:Zone.Identifier
+*:Zone.Identifier:Zone.Identifier
+
+# Endpoint security metadata
+*:sec.endpointdlp
+*:sec.endpointdlp:Zone.Identifier
