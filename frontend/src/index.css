@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Calibri, Carlito, ui-sans-serif, system-ui, sans-serif;
+  --font-display: Calibri, Carlito, ui-sans-serif, system-ui, sans-serif;
+  --color-page: #f5f8fc;
+  --color-ink: #111c33;
+  --color-tint-blue: #dbe6ff;
+  --color-muted: #56677a;
+  --color-link: #3352f0;
+  --color-mark: #cfdcff;
+}
+
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 1.5rem;
+  @media (min-width: 40rem) { padding-inline: 2.5rem; }
+  @media (min-width: 64rem) { padding-inline: 4rem; }
+  @media (min-width: 96rem) { padding-inline: 6rem; }
+}
+
+body { background: var(--color-page); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; min-width: 320px; }
+mark { background: var(--color-mark); color: inherit; padding: 0 .2em; border-radius: 4px; }
+::selection { background: var(--color-mark); }
+a:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+
+h1, h2 { font-family: var(--font-display); }
